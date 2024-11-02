@@ -1,0 +1,68 @@
+.class-descriptor {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    &__block {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        // border-bottom: 1px solid #BCBCBC;
+    }
+
+    &__textarea {
+        max-width: 700px;
+        width: 500px;
+        height: 80px;
+
+        background-color: transparent;
+        color: black;
+    }
+
+    &__heading {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    &__text {
+        margin-top: 2px;
+        margin-bottom: 2px;
+    }
+
+    &__props-header {
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+        height: 50px;
+    }
+
+    &__props-body {
+        width: 700px;
+        border-bottom: 1px solid #BCBCBC;
+        border-top: 1px solid #BCBCBC;
+    }
+
+
+    &__line {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 100px;
+        
+        &--first-item {
+          width: 160px;
+          float: left;
+        }
+        &--second-item {
+          width: 50px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        &--third-item {
+          width: 50px;
+        }
+    }
+}

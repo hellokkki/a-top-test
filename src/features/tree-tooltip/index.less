@@ -1,0 +1,41 @@
+.tooltip {
+    display: flex;
+    flex-flow: row nowrap;
+    -ms-flex-flow: row nowrap;
+    gap: 10px;
+
+    &__select {
+       width: 180px;
+       height: 30px;
+    }
+
+    &__search {
+        width: 250px;
+        border: 1px solid #BCBCBC;
+        height: 30px;
+    }
+}
+
+/* Target the main select dropdown container */
+.tooltip__select .ant-select-selector {
+    background-color: #BCBCBC !important;
+    border-radius: 4px;
+    border: 1px solid #BCBCBC;
+}
+
+/* Target the dropdown arrow */
+.tooltip__select .ant-select-arrow {
+    background-color: #BCBCBC !important;
+}
+
+/* Optional: Target the dropdown's placeholder text */
+.tooltip__select .ant-select-selection-placeholder {
+    color: white !important; /* Adjust text color for contrast */
+}
+
+/* Optional: Adjust input background (if visible) */
+.tooltip__select .ant-select-selection-search-input {
+    background-color: #BCBCBC !important;
+    border-radius: 4px;
+    color: white; /* Adjust text color */
+}
